@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <script src="validar.js"></script>
+    <title>Formulario HTML e PHP</title>
 </head>
 <body>
-    <form name="Formulario"></form>
-    <form action="#" method="post">
-        <input type="radio" name="habilitada" value="s"  onclick="HabilitarCampo(1)" > Habilita <br>
-        <input type="radio" name="habilitada" value="n" onclick="HabilitaCampo(0)" checked>desabilitar <br>
-        <input type="text" disabled>
-        campo:<input type="text" name="nome" disabled> <br>
+    <h1>Formulario com PHP</h1>
+    <form action="trataformulario.php" method="post">
+        Nome produto:<input type="text" name="produto"> <br>
+        Quantidade:<input type="text" name="quantidade"> <br>
+        Preço:<input type="text" name="preco"> <br>
+     
+       <input type="radio" value="branco" name="cor" > branco
+       <input type="radio" value="preto" name="cor"> preto
+       <input type="submit" value="enviar">
     </form>
-    
 </body>
 </html>
